@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - Jooe Farma</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.png" alt="Logo Jooe Farma" class="navbar__logo-img" />
+        <span class="navbar__logo-text">Jooe Farma</span>
+      </a>
+
+      <nav class="navbar__menu" id="navMenu">
+        <a href="index.html"   class="navbar__link">Home</a>
+        <a href="tentang.html" class="navbar__link">Tentang</a>
+        <a href="layanan.html" class="navbar__link">Layanan</a>
+        <a href="galeri.html"  class="navbar__link">Galeri</a>
+        <a href="kontak.html"  class="navbar__link active">Kontak</a>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <span class="badge">Hubungi Kami</span>
+        <h1 class="page-hero__title">Kami Siap Membantu Anda</h1>
+        <p class="page-hero__desc">
+          Punya pertanyaan tentang produk atau butuh konsultasi obat?
+          Jangan ragu untuk menghubungi tim Jooe Farma.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== KONTAK UTAMA ========== -->
+    <section class="section">
+      <div class="container kontak__inner">
+
+        <!-- Info Kontak -->
+        <div class="kontak-info">
+
+          <h2 class="section__title" style="text-align:left;">Informasi Kontak</h2>
+          <p style="color: var(--gray-500); margin-bottom: 2rem; font-size: 15px;">
+            Kunjungi apotek kami atau hubungi melalui salah satu
+            cara di bawah ini.
+          </p>
+
+          <div class="kontak-info__list">
+
+            <div class="kontak-info__item">
+              <div class="kontak-info__icon">📍</div>
+              <div>
+                <h4 class="kontak-info__label">Alamat</h4>
+                <p class="kontak-info__value">Jl. Rajawali No. 1, Rajeg</p>
+              </div>
+            </div>
+
+            <div class="kontak-info__item">
+              <div class="kontak-info__icon">📞</div>
+              <div>
+                <h4 class="kontak-info__label">Telepon</h4>
+                <p class="kontak-info__value">(021) 6662-8795</p>
+              </div>
+            </div>
+
+            <div class="kontak-info__item">
+              <div class="kontak-info__icon">📱</div>
+              <div>
+                <h4 class="kontak-info__label">WhatsApp</h4>
+                <p class="kontak-info__value">0812-6662-8795</p>
+              </div>
+            </div>
+
+            <div class="kontak-info__item">
+              <div class="kontak-info__icon">📧</div>
+              <div>
+                <h4 class="kontak-info__label">Email</h4>
+                <p class="kontak-info__value">jooefarma@gmail.com</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Jam Operasional -->
+          <div class="jam-operasional">
+            <h3 class="jam-operasional__title">🕐 Jam Operasional</h3>
+            <div class="jam-operasional__grid">
+              <div class="jam-operasional__row">
+                <span>Senin – Jumat</span>
+                <span class="jam-operasional__time">08.00 – 21.00</span>
+              </div>
+              <div class="jam-operasional__row">
+                <span>Sabtu</span>
+                <span class="jam-operasional__time">08.00 – 20.00</span>
+              </div>
+              <div class="jam-operasional__row">
+                <span>Minggu</span>
+                <span class="jam-operasional__time jam-operasional__time--tutup">Tutup</span>
+              </div>
+            </div>
+
+            <button class="jam-toggle-btn" id="jamToggleBtn">
+              Cek Status Sekarang
+            </button>
+            <p class="jam-status" id="jamStatus"></p>
+          </div>
+
+        </div>
+
+        <!-- Form Kontak -->
+        <div class="kontak-form-wrap">
+          <h2 class="section__title" style="text-align:left; margin-bottom: 0.5rem;">Kirim Pesan</h2>
+          <p style="color: var(--gray-500); margin-bottom: 1.75rem; font-size: 15px;">
+            Isi formulir di bawah ini dan kami akan membalas dalam 1x24 jam.
+          </p>
+
+          <form class="kontak-form" id="kontakForm" novalidate>
+
+            <div class="form-group">
+              <label class="form-label" for="nama">Nama Lengkap <span class="form-required">*</span></label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                class="form-input"
+                placeholder="Masukkan nama lengkap Anda"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email <span class="form-required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="contoh@email.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="telp">Nomor Telepon <span class="form-optional">(opsional)</span></label>
+              <input
+                type="tel"
+                id="telp"
+                name="telp"
+                class="form-input"
+                placeholder="08xx-xxxx-xxxx"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="topik">Topik Pertanyaan</label>
+              <select id="topik" name="topik" class="form-input form-select">
+                <option value="">-- Pilih topik --</option>
+                <option value="obat-umum">Obat Umum</option>
+                <option value="resep">Obat Resep Dokter</option>
+                <option value="herbal">Produk Herbal</option>
+                <option value="alat-medis">Alat Medis</option>
+                <option value="konsultasi">Konsultasi Apoteker</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pesan">Pesan <span class="form-required">*</span></label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                class="form-input form-textarea"
+                placeholder="Tulis pesan atau pertanyaan Anda di sini..."
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="width: 100%;">
+              Kirim Pesan
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== PETA LOKASI ========== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="section__title text-center" style="margin-bottom: 1.5rem;">Lokasi Kami</h2>
+        <div class="peta-placeholder">
+          <span class="peta-placeholder__icon">📍</span>
+          <p class="peta-placeholder__text">Jl. Rajawali No. 1, Rajeg</p>
+          <small class="peta-placeholder__sub">
+            (Ganti bagian ini dengan embed Google Maps apotek Anda)
+          </small>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <span class="footer__logo-text">Jooe Farma</span>
+        <p class="footer__tagline">Kesehatan Anda, Prioritas Kami.</p>
+      </div>
+
+      <div class="footer__nav">
+        <h4 class="footer__heading">Navigasi</h4>
+        <a href="index.html"   class="footer__link">Home</a>
+        <a href="tentang.html" class="footer__link">Tentang</a>
+        <a href="layanan.html" class="footer__link">Layanan</a>
+        <a href="galeri.html"  class="footer__link">Galeri</a>
+        <a href="kontak.html"  class="footer__link">Kontak</a>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__heading">Kontak</h4>
+        <p>📍 Jl. Rajawali No. 1, Rajeg</p>
+        <p>📞 (021) 6662-8795</p>
+        <p>📧 jooefarma@gmail.com</p>
+        <p>🕐 Senin – Sabtu: 08.00 – 21.00</p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>
+          &copy; 2026 Jooe Farma &mdash; Dibuat oleh
+          <strong>Dzovani Sandy Putra Prayitno</strong> | NIM: 2431417075
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Script cek jam operasional -->
+  <script>
+    const jamToggleBtn = document.getElementById('jamToggleBtn');
+    const jamStatus    = document.getElementById('jamStatus');
+
+    if (jamToggleBtn) {
+      jamToggleBtn.addEventListener('click', () => {
+        const now  = new Date();
+        const hari = now.getDay(); // 0=Minggu, 1=Senin, ..., 6=Sabtu
+        const jam  = now.getHours();
+        const menit = now.getMinutes();
+        const waktu = jam + menit / 60;
+
+        let status = '';
+
+        if (hari === 0) {
+          status = '🔴 Apotek sedang TUTUP (Hari Minggu)';
+        } else if (hari >= 1 && hari <= 5) {
+          status = (waktu >= 8 && waktu < 21)
+            ? '🟢 Apotek sedang BUKA (Senin–Jumat: 08.00–21.00)'
+            : '🔴 Apotek sedang TUTUP';
+        } else if (hari === 6) {
+          status = (waktu >= 8 && waktu < 20)
+            ? '🟢 Apotek sedang BUKA (Sabtu: 08.00–20.00)'
+            : '🔴 Apotek sedang TUTUP';
+        }
+
+        jamStatus.textContent = status;
+        jamStatus.style.display = 'block';
+      });
+    }
+  </script>
+
+</body>
+</html>

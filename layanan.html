@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan - Jooe Farma</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.png" alt="Logo Jooe Farma" class="navbar__logo-img" />
+        <span class="navbar__logo-text">Jooe Farma</span>
+      </a>
+
+      <nav class="navbar__menu" id="navMenu">
+        <a href="index.html"   class="navbar__link">Home</a>
+        <a href="tentang.html" class="navbar__link">Tentang</a>
+        <a href="layanan.html" class="navbar__link active">Layanan</a>
+        <a href="galeri.html"  class="navbar__link">Galeri</a>
+        <a href="kontak.html"  class="navbar__link">Kontak</a>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <span class="badge">Layanan Kami</span>
+        <h1 class="page-hero__title">Produk &amp; Layanan Jooe Farma</h1>
+        <p class="page-hero__desc">
+          Kami menyediakan berbagai produk kesehatan berkualitas tinggi
+          untuk memenuhi kebutuhan Anda dan keluarga.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== OBAT UMUM ========== -->
+    <section class="section">
+      <div class="container">
+
+        <div class="layanan-kategori__header">
+          <div class="layanan-kategori__title-group">
+            <span class="layanan-kategori__icon">💊</span>
+            <div>
+              <span class="badge">Kategori 1</span>
+              <h2 class="section__title" style="text-align:left; margin-top: 0.25rem;">Obat Umum</h2>
+            </div>
+          </div>
+          <p class="layanan-kategori__desc">
+            Obat bebas yang dapat dibeli tanpa resep dokter untuk mengatasi
+            keluhan kesehatan sehari-hari.
+          </p>
+        </div>
+
+        <div class="produk__grid">
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🤒</div>
+            <h4 class="produk-card__name">Obat Demam &amp; Nyeri</h4>
+            <p class="produk-card__desc">Parasetamol, ibuprofen, dan berbagai obat pereda demam dan nyeri.</p>
+            <span class="produk-card__tag">Bebas</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🤧</div>
+            <h4 class="produk-card__name">Obat Flu &amp; Batuk</h4>
+            <p class="produk-card__desc">Antihistamin, dekongestan, dan obat batuk kering maupun berdahak.</p>
+            <span class="produk-card__tag">Bebas</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🍽️</div>
+            <h4 class="produk-card__name">Obat Pencernaan</h4>
+            <p class="produk-card__desc">Antasida, obat maag, diare, dan gangguan lambung lainnya.</p>
+            <span class="produk-card__tag">Bebas</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">💪</div>
+            <h4 class="produk-card__name">Vitamin &amp; Suplemen</h4>
+            <p class="produk-card__desc">Vitamin C, D, multivitamin, dan suplemen untuk daya tahan tubuh.</p>
+            <span class="produk-card__tag">Bebas</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🩹</div>
+            <h4 class="produk-card__name">Obat Luka &amp; Antiseptik</h4>
+            <p class="produk-card__desc">Betadine, salep luka, plester, dan berbagai produk perawatan luka.</p>
+            <span class="produk-card__tag">Bebas</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">👁️</div>
+            <h4 class="produk-card__name">Obat Mata &amp; Telinga</h4>
+            <p class="produk-card__desc">Tetes mata, salep mata, tetes telinga untuk perawatan sehari-hari.</p>
+            <span class="produk-card__tag">Bebas</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== OBAT RESEP ========== -->
+    <section class="section" style="background: var(--gray-50);">
+      <div class="container">
+
+        <div class="layanan-kategori__header">
+          <div class="layanan-kategori__title-group">
+            <span class="layanan-kategori__icon">📋</span>
+            <div>
+              <span class="badge">Kategori 2</span>
+              <h2 class="section__title" style="text-align:left; margin-top: 0.25rem;">Obat Resep Dokter</h2>
+            </div>
+          </div>
+          <p class="layanan-kategori__desc">
+            Penebusan resep dokter dengan ketersediaan obat yang lengkap,
+            terjamin keasliannya, dan dilayani langsung oleh apoteker.
+          </p>
+        </div>
+
+        <div class="produk__grid">
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🫀</div>
+            <h4 class="produk-card__name">Obat Jantung &amp; Hipertensi</h4>
+            <p class="produk-card__desc">Amlodipine, captopril, bisoprolol, dan obat kardiovaskular lainnya.</p>
+            <span class="produk-card__tag produk-card__tag--resep">Resep</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🩸</div>
+            <h4 class="produk-card__name">Obat Diabetes</h4>
+            <p class="produk-card__desc">Metformin, glibenclamide, insulin, dan obat antidiabetes lainnya.</p>
+            <span class="produk-card__tag produk-card__tag--resep">Resep</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🦠</div>
+            <h4 class="produk-card__name">Antibiotik</h4>
+            <p class="produk-card__desc">Amoxicillin, azithromycin, ciprofloxacin sesuai resep dokter.</p>
+            <span class="produk-card__tag produk-card__tag--resep">Resep</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🧠</div>
+            <h4 class="produk-card__name">Obat Saraf &amp; Psikiatri</h4>
+            <p class="produk-card__desc">Obat-obatan untuk gangguan saraf dan kondisi psikiatri tertentu.</p>
+            <span class="produk-card__tag produk-card__tag--resep">Resep</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🫁</div>
+            <h4 class="produk-card__name">Obat Pernapasan</h4>
+            <p class="produk-card__desc">Salbutamol, kortikosteroid inhalasi, dan obat asma lainnya.</p>
+            <span class="produk-card__tag produk-card__tag--resep">Resep</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">💉</div>
+            <h4 class="produk-card__name">Obat Hormon</h4>
+            <p class="produk-card__desc">Obat tiroid, kortikosteroid oral, dan terapi hormon lainnya.</p>
+            <span class="produk-card__tag produk-card__tag--resep">Resep</span>
+          </div>
+
+        </div>
+
+        <!-- Info resep -->
+        <div class="resep-info">
+          <span class="resep-info__icon">ℹ️</span>
+          <p>
+            Bawa resep asli dokter Anda. Apoteker kami siap membantu memastikan
+            ketersediaan dan kesesuaian obat dengan kondisi Anda.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== HERBAL ========== -->
+    <section class="section">
+      <div class="container">
+
+        <div class="layanan-kategori__header">
+          <div class="layanan-kategori__title-group">
+            <span class="layanan-kategori__icon">🌿</span>
+            <div>
+              <span class="badge">Kategori 3</span>
+              <h2 class="section__title" style="text-align:left; margin-top: 0.25rem;">Produk Herbal</h2>
+            </div>
+          </div>
+          <p class="layanan-kategori__desc">
+            Pilihan produk herbal dan jamu tradisional pilihan untuk mendukung
+            kesehatan Anda secara alami dan aman.
+          </p>
+        </div>
+
+        <div class="produk__grid">
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🫚</div>
+            <h4 class="produk-card__name">Minyak Herbal</h4>
+            <p class="produk-card__desc">Minyak kayu putih, minyak zaitun, dan minyak esensial berkualitas.</p>
+            <span class="produk-card__tag produk-card__tag--herbal">Herbal</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🍵</div>
+            <h4 class="produk-card__name">Jamu &amp; Minuman Herbal</h4>
+            <p class="produk-card__desc">Jamu tradisional, teh herbal, dan minuman kesehatan alami.</p>
+            <span class="produk-card__tag produk-card__tag--herbal">Herbal</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🌾</div>
+            <h4 class="produk-card__name">Suplemen Herbal</h4>
+            <p class="produk-card__desc">Ekstrak temulawak, kunyit, jahe, dan suplemen herbal lainnya.</p>
+            <span class="produk-card__tag produk-card__tag--herbal">Herbal</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🍯</div>
+            <h4 class="produk-card__name">Madu &amp; Propolis</h4>
+            <p class="produk-card__desc">Madu murni, propolis, royal jelly untuk imunitas dan stamina.</p>
+            <span class="produk-card__tag produk-card__tag--herbal">Herbal</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🌱</div>
+            <h4 class="produk-card__name">Obat Herbal Terstandar</h4>
+            <p class="produk-card__desc">Produk herbal bersertifikat BPOM untuk berbagai keluhan kesehatan.</p>
+            <span class="produk-card__tag produk-card__tag--herbal">Herbal</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🧴</div>
+            <h4 class="produk-card__name">Perawatan Tubuh Herbal</h4>
+            <p class="produk-card__desc">Sabun, lotion, dan produk perawatan kulit berbahan alami herbal.</p>
+            <span class="produk-card__tag produk-card__tag--herbal">Herbal</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ALAT MEDIS ========== -->
+    <section class="section" style="background: var(--gray-50);">
+      <div class="container">
+
+        <div class="layanan-kategori__header">
+          <div class="layanan-kategori__title-group">
+            <span class="layanan-kategori__icon">🩺</span>
+            <div>
+              <span class="badge">Kategori 4</span>
+              <h2 class="section__title" style="text-align:left; margin-top: 0.25rem;">Alat Medis</h2>
+            </div>
+          </div>
+          <p class="layanan-kategori__desc">
+            Peralatan medis berkualitas untuk kebutuhan profesional maupun
+            perawatan kesehatan di rumah.
+          </p>
+        </div>
+
+        <div class="produk__grid">
+
+          <div class="produk-card">
+            <div class="produk-card__icon">😷</div>
+            <h4 class="produk-card__name">Masker Medis</h4>
+            <p class="produk-card__desc">Masker bedah, masker KN95, dan masker N95 untuk perlindungan optimal.</p>
+            <span class="produk-card__tag produk-card__tag--alat">Alat Medis</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🧤</div>
+            <h4 class="produk-card__name">Sarung Tangan</h4>
+            <p class="produk-card__desc">Sarung tangan latex, nitrile, dan vinyl steril untuk berbagai keperluan.</p>
+            <span class="produk-card__tag produk-card__tag--alat">Alat Medis</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">💉</div>
+            <h4 class="produk-card__name">Suntikan &amp; Spuit</h4>
+            <p class="produk-card__desc">Spuit berbagai ukuran (1ml, 3ml, 5ml, 10ml) steril sekali pakai.</p>
+            <span class="produk-card__tag produk-card__tag--alat">Alat Medis</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🩸</div>
+            <h4 class="produk-card__name">Kantung Infus</h4>
+            <p class="produk-card__desc">Kantung infus NaCl, RL, dan D5% berbagai ukuran untuk keperluan medis.</p>
+            <span class="produk-card__tag produk-card__tag--alat">Alat Medis</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🫁</div>
+            <h4 class="produk-card__name">Oksigen Portable</h4>
+            <p class="produk-card__desc">Tabung oksigen portable praktis untuk pertolongan pertama dan perjalanan.</p>
+            <span class="produk-card__tag produk-card__tag--alat">Alat Medis</span>
+          </div>
+
+          <div class="produk-card">
+            <div class="produk-card__icon">🌡️</div>
+            <h4 class="produk-card__name">Alat Ukur Kesehatan</h4>
+            <p class="produk-card__desc">Termometer, tensimeter, pulse oximeter, dan glukometer untuk monitoring kesehatan.</p>
+            <span class="produk-card__tag produk-card__tag--alat">Alat Medis</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <h2 class="cta-banner__title">Tidak Menemukan Produk yang Dicari?</h2>
+        <p class="cta-banner__desc">
+          Hubungi kami dan apoteker kami akan membantu menemukan produk
+          yang paling sesuai dengan kebutuhan Anda.
+        </p>
+        <a href="kontak.html" class="btn btn--white">Hubungi Kami</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <span class="footer__logo-text">Jooe Farma</span>
+        <p class="footer__tagline">Kesehatan Anda, Prioritas Kami.</p>
+      </div>
+
+      <div class="footer__nav">
+        <h4 class="footer__heading">Navigasi</h4>
+        <a href="index.html"   class="footer__link">Home</a>
+        <a href="tentang.html" class="footer__link">Tentang</a>
+        <a href="layanan.html" class="footer__link">Layanan</a>
+        <a href="galeri.html"  class="footer__link">Galeri</a>
+        <a href="kontak.html"  class="footer__link">Kontak</a>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__heading">Kontak</h4>
+        <p>📍 Jl. Rajawali No. 1, Rajeg</p>
+        <p>📞 (021) 6662-8795</p>
+        <p>📧 jooefarma@gmail.com</p>
+        <p>🕐 Senin – Sabtu: 08.00 – 21.00</p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>
+          &copy; 2026 Jooe Farma &mdash; Dibuat oleh
+          <strong>Dzovani Sandy Putra Prayitno</strong> | NIM: 2431417075
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

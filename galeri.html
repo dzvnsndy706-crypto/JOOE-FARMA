@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri - Jooe Farma</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.png" alt="Logo Jooe Farma" class="navbar__logo-img" />
+        <span class="navbar__logo-text">Jooe Farma</span>
+      </a>
+
+      <nav class="navbar__menu" id="navMenu">
+        <a href="index.html"   class="navbar__link">Home</a>
+        <a href="tentang.html" class="navbar__link">Tentang</a>
+        <a href="layanan.html" class="navbar__link">Layanan</a>
+        <a href="galeri.html"  class="navbar__link active">Galeri</a>
+        <a href="kontak.html"  class="navbar__link">Kontak</a>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <span class="badge">Galeri</span>
+        <h1 class="page-hero__title">Galeri Jooe Farma</h1>
+        <p class="page-hero__desc">
+          Lihat suasana apotek, fasilitas, dan produk unggulan kami
+          yang siap melayani kebutuhan kesehatan Anda.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== FILTER TABS ========== -->
+    <section class="section" style="padding-bottom: 0;">
+      <div class="container">
+        <div class="galeri-filter" id="galeriFilter">
+          <button class="galeri-filter__btn active" data-filter="semua">Semua</button>
+          <button class="galeri-filter__btn" data-filter="apotek">Apotek</button>
+          <button class="galeri-filter__btn" data-filter="produk">Produk</button>
+          <button class="galeri-filter__btn" data-filter="fasilitas">Fasilitas</button>
+          <button class="galeri-filter__btn" data-filter="tim">Tim</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALERI GRID ========== -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="galeri__grid" id="galeriGrid">
+
+          <div class="galeri-item" data-category="apotek">
+            <!-- GANTI: masukkan foto tampak depan apotek -->
+            <!-- Nama file contoh: images/apotek-depan.jpg -->
+            <img
+              src="images/apotek-depan.jpg"
+              alt="Tampak Depan Apotek Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Tampak Depan Apotek</p>
+              <span class="galeri-item__cat">Apotek</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="apotek">
+            <!-- GANTI: masukkan foto area dalam apotek / etalase -->
+            <!-- Nama file contoh: images/apotek-dalam.jpg -->
+            <img
+              src="images/apotek-dalam.jpg"
+              alt="Area Pelayanan Utama Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Area Pelayanan Utama</p>
+              <span class="galeri-item__cat">Apotek</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="apotek">
+            <!-- GANTI: masukkan foto kasir / meja pelayanan -->
+            <!-- Nama file contoh: images/apotek-kasir.jpg -->
+            <img
+              src="images/apotek-kasir.jpg"
+              alt="Kasir dan Area Pembayaran Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Kasir &amp; Area Pembayaran</p>
+              <span class="galeri-item__cat">Apotek</span>
+            </div>
+          </div>
+
+          <!-- =============================================
+               KATEGORI: PRODUK
+               Foto yang cocok: foto obat, herbal, alat medis
+               ============================================= -->
+
+          <div class="galeri-item" data-category="produk">
+            <!-- GANTI: masukkan foto rak obat umum -->
+            <!-- Nama file contoh: images/produk-obat-umum.jpg -->
+            <img
+              src="images/produk-obat-umum.jpg"
+              alt="Rak Obat Umum Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Rak Obat Umum</p>
+              <span class="galeri-item__cat">Produk</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="produk">
+            <!-- GANTI: masukkan foto produk herbal / jamu -->
+            <!-- Nama file contoh: images/produk-herbal.jpg -->
+            <img
+              src="images/produk-herbal.jpg"
+              alt="Koleksi Produk Herbal Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Koleksi Produk Herbal</p>
+              <span class="galeri-item__cat">Produk</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="produk">
+            <!-- GANTI: masukkan foto rak alat medis -->
+            <!-- Nama file contoh: images/produk-alat-medis.jpg -->
+            <img
+              src="images/produk-alat-medis.jpg"
+              alt="Rak Alat Medis Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Rak Alat Medis</p>
+              <span class="galeri-item__cat">Produk</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="produk">
+            <!-- GANTI: masukkan foto oksigen portable -->
+            <!-- Nama file contoh: images/produk-oksigen.jpg -->
+            <img
+              src="images/produk-oksigen.jpg"
+              alt="Oksigen Portable Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Oksigen Portable</p>
+              <span class="galeri-item__cat">Produk</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="produk">
+            <!-- GANTI: masukkan foto peralatan medis steril -->
+            <!-- Nama file contoh: images/produk-medis-steril.jpg -->
+            <img
+              src="images/produk-medis-steril.jpg"
+              alt="Peralatan Medis Steril Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Peralatan Medis Steril</p>
+              <span class="galeri-item__cat">Produk</span>
+            </div>
+          </div>
+
+          <!-- =============================================
+               KATEGORI: FASILITAS
+               Foto yang cocok: ruang tunggu, ruang racik, lemari
+               ============================================= -->
+
+          <div class="galeri-item" data-category="fasilitas">
+            <!-- GANTI: masukkan foto ruang tunggu -->
+            <!-- Nama file contoh: images/fasilitas-ruang-tunggu.jpg -->
+            <img
+              src="images/fasilitas-ruang-tunggu.jpg"
+              alt="Ruang Tunggu Nyaman Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Ruang Tunggu Nyaman</p>
+              <span class="galeri-item__cat">Fasilitas</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="fasilitas">
+            <!-- GANTI: masukkan foto ruang racik obat -->
+            <!-- Nama file contoh: images/fasilitas-ruang-racik.jpg -->
+            <img
+              src="images/fasilitas-ruang-racik.jpg"
+              alt="Ruang Racik Obat Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Ruang Racik Obat</p>
+              <span class="galeri-item__cat">Fasilitas</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="fasilitas">
+            <!-- GANTI: masukkan foto lemari pendingin obat -->
+            <!-- Nama file contoh: images/fasilitas-lemari-dingin.jpg -->
+            <img
+              src="images/fasilitas-lemari-dingin.jpg"
+              alt="Lemari Pendingin Obat Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Lemari Pendingin Obat</p>
+              <span class="galeri-item__cat">Fasilitas</span>
+            </div>
+          </div>
+
+          <!-- =============================================
+               KATEGORI: TIM
+               Foto yang cocok: foto apoteker, staf, tim bersama
+               ============================================= -->
+
+          <div class="galeri-item" data-category="tim">
+            <!-- GANTI: masukkan foto apoteker -->
+            <!-- Nama file contoh: images/tim-apoteker.jpg -->
+            <img
+              src="images/tim-apoteker.jpg"
+              alt="Apoteker Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Apoteker Kami</p>
+              <span class="galeri-item__cat">Tim</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="tim">
+            <!-- GANTI: masukkan foto pelayanan konsultasi -->
+            <!-- Nama file contoh: images/tim-konsultasi.jpg -->
+            <img
+              src="images/tim-konsultasi.jpg"
+              alt="Pelayanan Konsultasi Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Pelayanan Konsultasi</p>
+              <span class="galeri-item__cat">Tim</span>
+            </div>
+          </div>
+
+          <div class="galeri-item" data-category="tim">
+            <!-- GANTI: masukkan foto seluruh tim Jooe Farma -->
+            <!-- Nama file contoh: images/tim-bersama.jpg -->
+            <img
+              src="images/tim-bersama.jpg"
+              alt="Tim Jooe Farma"
+              class="galeri-item__img-real"
+            />
+            <div class="galeri-item__overlay">
+              <p class="galeri-item__caption">Tim Jooe Farma</p>
+              <span class="galeri-item__cat">Tim</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Empty state -->
+        <div class="galeri-empty" id="galeriEmpty" style="display: none;">
+          <span>🔍</span>
+          <p>Tidak ada foto dalam kategori ini.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <h2 class="cta-banner__title">Kunjungi Apotek Kami Langsung!</h2>
+        <p class="cta-banner__desc">
+          Rasakan sendiri kenyamanan berbelanja dan konsultasi di Jooe Farma.
+        </p>
+        <a href="kontak.html" class="btn btn--white">Lihat Lokasi Kami</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <span class="footer__logo-text">Jooe Farma</span>
+        <p class="footer__tagline">Kesehatan Anda, Prioritas Kami.</p>
+      </div>
+
+      <div class="footer__nav">
+        <h4 class="footer__heading">Navigasi</h4>
+        <a href="index.html"   class="footer__link">Home</a>
+        <a href="tentang.html" class="footer__link">Tentang</a>
+        <a href="layanan.html" class="footer__link">Layanan</a>
+        <a href="galeri.html"  class="footer__link">Galeri</a>
+        <a href="kontak.html"  class="footer__link">Kontak</a>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__heading">Kontak</h4>
+        <p>📍 Jl. Rajawali No. 1, Rajeg</p>
+        <p>📞 (021) 6662-8795</p>
+        <p>📧 jooefarma@gmail.com</p>
+        <p>🕐 Senin – Sabtu: 08.00 – 21.00</p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>
+          &copy; 2026 Jooe Farma &mdash; Dibuat oleh
+          <strong>Dzovani Sandy Putra Prayitno</strong> | NIM: 2431417075
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
