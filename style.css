@@ -1359,8 +1359,8 @@ ul {
 
 /* Hero cards */
 .hero-card__img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 16px;
   margin: 0 auto 0.5rem;
