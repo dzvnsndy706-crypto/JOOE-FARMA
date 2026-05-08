@@ -1360,7 +1360,7 @@ ul {
 /* Hero cards */
 .hero-card__img {
   width: 100px;
-  height: 100px;
+  height: 200px;
   object-fit: cover;
   border-radius: 16px;
   margin: 0 auto 0.5rem;
