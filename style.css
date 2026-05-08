@@ -1362,7 +1362,7 @@ ul {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border-radius: var(--radius-sm);
+  border-radius: 16px;
   margin-bottom: 0.5rem;
 }
 
@@ -1371,7 +1371,7 @@ ul {
   width: 100%;
   height: 140px;
   object-fit: cover;
-  border-radius: var(--radius-sm);
+  border-radius: 16px;
   margin-bottom: 1rem;
 }
 
