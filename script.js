@@ -1,4 +1,4 @@
-/* ---------- NAVBAR TOGGLE (mobile) ---------- */
+// mobile
 const navToggle = document.getElementById('navToggle');
 const navMenu   = document.getElementById('navMenu');
 
@@ -15,14 +15,14 @@ if (navToggle && navMenu) {
   });
 }
 
-/* ---------- ACTIVE LINK sesuai halaman ---------- */
+// active link
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.navbar__link').forEach(link => {
   const href = link.getAttribute('href');
   link.classList.toggle('active', href === currentPage);
 });
 
-/* ---------- GALERI FILTER ---------- */
+// galeri filter
 const filterBtns  = document.querySelectorAll('.galeri-filter__btn');
 const galeriItems = document.querySelectorAll('.galeri-item');
 const galeriEmpty = document.getElementById('galeriEmpty');
@@ -54,7 +54,7 @@ if (filterBtns.length > 0) {
   });
 }
 
-/* ---------- FORM KONTAK — VALIDASI ---------- */
+// form kontak validasi
 const kontakForm = document.getElementById('kontakForm');
 
 if (kontakForm) {
