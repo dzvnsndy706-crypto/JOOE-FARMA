@@ -1,4 +1,4 @@
-/* ---------- RESET & BASE ---------- */
+/* reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +31,7 @@ ul {
   list-style: none;
 }
 
-/* ---------- CSS VARIABLES ---------- */
+/* variables */
 :root {
   --green-50:  #f0faf0;
   --green-100: #d4f0d4;
@@ -58,14 +58,14 @@ ul {
   --transition: 0.2s ease;
 }
 
-/* ---------- FLUID CONTAINER ---------- */
+/* fluid container */
 .container {
   width: 90%;
   max-width: 1140px;
   margin-inline: auto;
 }
 
-/* ---------- TYPOGRAPHY UTILITIES ---------- */
+/* typography utilities */
 .text-center { text-align: center; }
 
 .badge {
@@ -80,7 +80,7 @@ ul {
   margin-bottom: 0.75rem;
 }
 
-/* ---------- BUTTONS ---------- */
+/* tombol */
 .btn {
   display: inline-block;
   padding: 12px 28px;
@@ -120,7 +120,7 @@ ul {
   background: var(--green-50);
 }
 
-/* ---------- SECTION COMMON ---------- */
+/* section common */
 .section {
   padding: 5rem 0;
 }
@@ -145,9 +145,7 @@ ul {
   color: var(--gray-500);
 }
 
-/* ================================================
-   NAVBAR
-   ================================================ */
+/* navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -238,9 +236,7 @@ ul {
   transition: var(--transition);
 }
 
-/* ================================================
-   HERO
-   ================================================ */
+/* hero */
 .hero {
   background: linear-gradient(135deg, var(--green-50) 0%, #ffffff 60%);
   padding: 5rem 0;
@@ -312,9 +308,7 @@ ul {
   color: var(--green-700);
 }
 
-/* ================================================
-   STATS
-   ================================================ */
+/* stats */
 .stats {
   background: var(--green-600);
   padding: 3rem 0;
@@ -341,9 +335,7 @@ ul {
   margin-top: 4px;
 }
 
-/* ================================================
-   SERVICES
-   ================================================ */
+/* service */
 .services__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -381,9 +373,7 @@ ul {
   line-height: 1.6;
 }
 
-/* ================================================
-   WHY JOOE FARMA
-   ================================================ */
+/* kenapa jooe farma */
 .why {
   background: var(--gray-50);
 }
@@ -469,9 +459,7 @@ ul {
   color: var(--gray-500);
 }
 
-/* ================================================
-   CTA BANNER
-   ================================================ */
+/* cta banner */
 .cta-banner {
   background: var(--green-700);
   padding: 5rem 0;
@@ -496,9 +484,7 @@ ul {
   margin-inline: auto;
 }
 
-/* ================================================
-   FOOTER
-   ================================================ */
+/* footer */
 .footer {
   background: var(--green-800);
   color: var(--green-100);
@@ -563,9 +549,7 @@ ul {
   color: var(--green-200);
 }
 
-/* ================================================
-   PAGE HERO (halaman dalam)
-   ================================================ */
+/* page hero halaman dalam */
 .page-hero {
   background: linear-gradient(135deg, var(--green-50) 0%, #ffffff 70%);
   padding: 4rem 0;
@@ -591,9 +575,7 @@ ul {
   color: var(--gray-500);
 }
 
-/* ================================================
-   LAYANAN — KATEGORI HEADER
-   ================================================ */
+/* layanan - header */
 .layanan-kategori__header {
   margin-bottom: 2rem;
 }
@@ -616,9 +598,7 @@ ul {
   max-width: 600px;
 }
 
-/* ================================================
-   LAYANAN — PRODUK GRID
-   ================================================ */
+/* layanan - grid */
 .produk__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -706,9 +686,7 @@ ul {
   color: var(--green-700);
 }
 
-/* ================================================
-   TENTANG — SEJARAH
-   ================================================ */
+/* tentang - sejarah */
 .about-story__inner {
   display: flex;
   align-items: center;
@@ -749,9 +727,7 @@ ul {
   flex: 1;
 }
 
-/* ================================================
-   TENTANG — VISI MISI
-   ================================================ */
+/* tentang - visi misi  */
 .visi-misi__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -805,9 +781,7 @@ ul {
   line-height: 1.6;
 }
 
-/* ================================================
-   TENTANG — TIM
-   ================================================ */
+/* tentang - tim jooe */
 .team__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -853,9 +827,7 @@ ul {
   line-height: 1.6;
 }
 
-/* ================================================
-   TENTANG — KOMITMEN
-   ================================================ */
+/* tentang - komitmen */
 .komitmen__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -889,9 +861,7 @@ ul {
   line-height: 1.6;
 }
 
-/* ================================================
-   RESPONSIVE — TABLET (max 900px)
-   ================================================ */
+/* buat tablet */
 @media (max-width: 900px) {
 
   .hero__inner {
@@ -937,9 +907,7 @@ ul {
   }
 }
 
-/* ================================================
-   RESPONSIVE — MOBILE (max 600px)
-   ================================================ */
+/* buat hp */
 @media (max-width: 600px) {
 
   /* Navbar mobile */
@@ -986,9 +954,7 @@ ul {
   }
 }
 
-/* ================================================
-   GALERI
-   ================================================ */
+/* galeri  */
 .galeri-filter {
   display: flex;
   gap: 0.75rem;
@@ -1344,18 +1310,15 @@ ul {
   }
 }
 
-/* ================================================
-   GALERI — GAMBAR REAL
-   ================================================ */
+/* galeri - gambar */
 .galeri-item__img-real {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
 }
-/* ================================================
-   FOTO PENGGANTI ICON
-   ================================================ */
+
+/* icon */
 
 /* Hero cards */
 .hero-card__img {
@@ -1384,9 +1347,6 @@ ul {
   border-radius: var(--radius-sm);
   flex-shrink: 0;
 }
-/* ================================================
-   HERO CARD & SERVICE CARD — FOTO SEBAGAI GAMBAR ATAS
-   ================================================ */
 
 /* Override hero-card */
 .hero-card {

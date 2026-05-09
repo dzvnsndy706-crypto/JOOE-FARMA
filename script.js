@@ -106,3 +106,34 @@ function showAlert(type, message) {
   /* Auto hilang setelah 5 detik */
   setTimeout(() => alert.remove(), 5000);
 }
+
+// jam operasional
+const jamToggleBtn = document.getElementById('jamToggleBtn');
+const jamStatus    = document.getElementById('jamStatus');
+
+if (jamToggleBtn) {
+      jamToggleBtn.addEventListener('click', () => {
+        const now  = new Date();
+        const hari = now.getDay(); // 0=Minggu, 1=Senin, ..., 6=Sabtu
+        const jam  = now.getHours();
+        const menit = now.getMinutes();
+        const waktu = jam + menit / 60;
+
+        let status = '';
+
+        if (hari === 0) {
+          status = '🔴 Apotek sedang TUTUP (Hari Minggu)';
+        } else if (hari >= 1 && hari <= 5) {
+          status = (waktu >= 8 && waktu < 21)
+            ? '🟢 Apotek sedang BUKA (Senin–Jumat: 08.00–21.00)'
+            : '🔴 Apotek sedang TUTUP';
+        } else if (hari === 6) {
+          status = (waktu >= 8 && waktu < 20)
+            ? '🟢 Apotek sedang BUKA (Sabtu: 08.00–20.00)'
+            : '🔴 Apotek sedang TUTUP';
+        }
+
+        jamStatus.textContent = status;
+        jamStatus.style.display = 'block';
+      });
+    }
