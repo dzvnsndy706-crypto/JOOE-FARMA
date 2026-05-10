@@ -38,7 +38,7 @@
 
   <main>
 
-   <!-- page hero -->
+    <!-- page hero -->
     <section class="page-hero">
       <div class="container page-hero__inner">
         <span class="badge">Hubungi Kami</span>
@@ -54,14 +54,11 @@
     <section class="section">
       <div class="container kontak__inner">
 
-        <!-- Info Kontak -->
+        <!-- panel kiri — info kontak -->
         <div class="kontak-info">
 
-          <h2 class="section__title" style="text-align:left;">Informasi Kontak</h2>
-          <p style="color: var(--gray-500); margin-bottom: 2rem; font-size: 15px;">
-            Kunjungi apotek kami atau hubungi melalui salah satu
-            cara di bawah ini.
-          </p>
+          <h2 class="section__title">Informasi Kontak</h2>
+          <p>Kunjungi apotek kami atau hubungi melalui salah satu cara di bawah ini.</p>
 
           <div class="kontak-info__list">
 
@@ -99,7 +96,7 @@
 
           </div>
 
-          <!-- Jam Operasional -->
+          <!-- jam operasional -->
           <div class="jam-operasional">
             <h3 class="jam-operasional__title">🕐 Jam Operasional</h3>
             <div class="jam-operasional__grid">
@@ -116,17 +113,15 @@
                 <span class="jam-operasional__time jam-operasional__time--tutup">Tutup</span>
               </div>
             </div>
-
-            <button class="jam-toggle-btn" id="jamToggleBtn">
-              Cek Status Sekarang
-            </button>
+            <button class="jam-toggle-btn" id="jamToggleBtn">Cek Status Sekarang</button>
             <p class="jam-status" id="jamStatus"></p>
           </div>
 
         </div>
 
-        <!-- Form Kontak -->
+        <!-- panel kanan — form -->
         <div class="kontak-form-wrap">
+
           <h2 class="section__title" style="text-align:left; margin-bottom: 0.5rem;">Kirim Pesan</h2>
           <p style="color: var(--gray-500); margin-bottom: 1.75rem; font-size: 15px;">
             Isi formulir di bawah ini dan kami akan membalas dalam 1x24 jam.
@@ -134,42 +129,52 @@
 
           <form class="kontak-form" id="kontakForm" novalidate>
 
+            <!-- nama -->
             <div class="form-group">
-              <label class="form-label" for="nama">Nama Lengkap <span class="form-required">*</span></label>
               <input
                 type="text"
                 id="nama"
                 name="nama"
                 class="form-input"
-                placeholder="Masukkan nama lengkap Anda"
+                placeholder=" "
               />
+              <label class="form-label" for="nama">
+                Nama Lengkap <span class="form-required">*</span>
+              </label>
             </div>
 
+            <!-- email -->
             <div class="form-group">
-              <label class="form-label" for="email">Email <span class="form-required">*</span></label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 class="form-input"
-                placeholder="contoh@email.com"
+                placeholder=" "
               />
+              <label class="form-label" for="email">
+                Email <span class="form-required">*</span>
+              </label>
             </div>
 
+            <!-- telepon -->
             <div class="form-group">
-              <label class="form-label" for="telp">Nomor Telepon <span class="form-optional">(opsional)</span></label>
               <input
                 type="tel"
                 id="telp"
                 name="telp"
                 class="form-input"
-                placeholder="08xx-xxxx-xxxx"
+                placeholder=" "
               />
+              <label class="form-label" for="telp">
+                Nomor Telepon <span class="form-optional">(opsional)</span>
+              </label>
             </div>
 
-            <div class="form-group">
-              <label class="form-label" for="topik">Topik Pertanyaan</label>
-              <select id="topik" name="topik" class="form-input form-select">
+            <!-- topik -->
+            <div class="form-select-wrap">
+              <label class="form-select-label" for="topik">Topik Pertanyaan</label>
+              <select id="topik" name="topik" class="form-select">
                 <option value="">-- Pilih topik --</option>
                 <option value="obat-umum">Obat Umum</option>
                 <option value="resep">Obat Resep Dokter</option>
@@ -180,15 +185,18 @@
               </select>
             </div>
 
+            <!-- pesan -->
             <div class="form-group">
-              <label class="form-label" for="pesan">Pesan <span class="form-required">*</span></label>
               <textarea
                 id="pesan"
                 name="pesan"
                 class="form-input form-textarea"
-                placeholder="Tulis pesan atau pertanyaan Anda di sini..."
+                placeholder=" "
                 rows="5"
               ></textarea>
+              <label class="form-label" for="pesan">
+                Pesan <span class="form-required">*</span>
+              </label>
             </div>
 
             <button type="submit" class="btn btn--primary" style="width: 100%;">
@@ -203,21 +211,21 @@
 
     <!-- google maps -->
     <section class="section" style="padding-top: 0;">
-  <div class="container">
-    <h2 class="section__title text-center" style="margin-bottom: 1.5rem;">Lokasi Kami</h2>
-    <div class="peta-wrapper">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.1224983220022!2d106.51072897926142!3d-6.114206678072724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41ffcf55ee023b%3A0x7b00434588c9d297!2sJl.%20Rajawali%2C%20Rajeg%2C%20Kec.%20Rajeg%2C%20Kabupaten%20Tangerang%2C%20Banten%2015540!5e0!3m2!1sid!2sid!4v1778132169169!5m2!1sid!2sid"
-    width="100%"
-    height="400"
-    style="border:0; border-radius: 12px;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
-  </div>
-</section>
+      <div class="container">
+        <h2 class="section__title text-center" style="margin-bottom: 1.5rem;">Lokasi Kami</h2>
+        <div class="peta-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.1224983220022!2d106.51072897926142!3d-6.114206678072724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41ffcf55ee023b%3A0x7b00434588c9d297!2sJl.%20Rajawali%2C%20Rajeg%2C%20Kec.%20Rajeg%2C%20Kabupaten%20Tangerang%2C%20Banten%2015540!5e0!3m2!1sid!2sid!4v1778132169169!5m2!1sid!2sid"
+            width="100%"
+            height="400"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -261,5 +269,5 @@
 
   <script src="script.js"></script>
 
-  </body>
+</body>
 </html>

@@ -69,7 +69,7 @@ if (kontakForm) {
 
     /* Validasi field wajib */
     if (!nama || !email || !pesan) {
-      showAlert('error', 'Harap isi semua field yang wajib diisi!');
+      showAlert('error', 'Harap isi semua field yang wajib diisi yah, adik adikk!');
       return;
     }
 
