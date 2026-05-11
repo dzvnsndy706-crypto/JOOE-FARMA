@@ -827,6 +827,16 @@ ul {
   line-height: 1.6;
 }
 
+.team-card__avatar-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: block;
+  border: 3px solid var(--green-100);
+}
+
 /* tentang - komitmen */
 .komitmen__grid {
   display: grid;

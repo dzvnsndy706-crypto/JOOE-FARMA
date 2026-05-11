@@ -69,7 +69,7 @@ if (kontakForm) {
 
     /* Validasi field wajib */
     if (!nama || !email || !pesan) {
-      showAlert('error', 'Harap isi semua field yang wajib diisi yah, adik adikk!');
+      showAlert('error', 'Harap isi semua field yang wajib diisi!');
       return;
     }
 
@@ -137,3 +137,52 @@ if (jamToggleBtn) {
         jamStatus.style.display = 'block';
       });
     }
+// count up animation stats
+function countUp(el, target, suffix, duration) {
+  const start    = 0;
+  const step     = duration / target;
+  let   current  = start;
+
+  const timer = setInterval(() => {
+    current++;
+    el.textContent = current + suffix;
+    if (current >= target) {
+      el.textContent = target + suffix;
+      clearInterval(timer);
+    }
+  }, step);
+}
+
+function initCountUp() {
+  const stats = document.querySelectorAll('.stats__number');
+  if (stats.length === 0) return;
+
+  // data tiap angka: [target, suffix]
+  const data = [
+    [500, '+'],
+    [10,  'K+'],
+    [6,   '+'],
+    [24,  '/7'],
+  ];
+
+  stats.forEach((el, i) => {
+    const [target, suffix] = data[i];
+    countUp(el, target, suffix, 1500);
+  });
+}
+
+// jalankan saat stats section terlihat di layar
+const statsSection = document.querySelector('.stats');
+
+if (statsSection) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        initCountUp();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(statsSection);
+}
